@@ -65,6 +65,8 @@ a:hover{
 
 .container{
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     padding: 20px;
+    height: 100%;
 }
