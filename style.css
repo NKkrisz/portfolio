@@ -7,7 +7,7 @@
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #3e3b3b;
+    background-color: #1d1d1d;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -69,4 +69,31 @@ a:hover{
     flex-direction: column;
     padding: 20px;
     height: 100%;
+}
+
+#projects{
+    display: flex;
+    justify-content: space-between;
+}
+
+#projects label{
+    font-size: 1.5rem;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li:hover a{
+    text-decoration: none;
+    background-color: antiquewhite;
+    color: black;
+}
+
+#preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-height: 300px;
 }
