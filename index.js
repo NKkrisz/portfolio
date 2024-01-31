@@ -19,7 +19,7 @@ async function requestRepos() {
             web_projects[repo.name] = repo;
             
             li.addEventListener("mouseover", () => {
-                document.querySelector("#preview").src = `img/projects/${repo.name}.png`
+                (repo.name !== "portfolio") ? document.querySelector("#preview").src = `img/projects/${repo.name}.png` : document.querySelector("#preview").src = null;
                 document.querySelector("#previewLabel").innerText = repo.description ? repo.description : "No description available";
             });
 
