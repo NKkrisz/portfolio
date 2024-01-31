@@ -20,6 +20,7 @@ async function requestRepos() {
             
             li.addEventListener("mouseover", () => {
                 document.querySelector("#preview").src = `img/projects/${repo.name}.png`
+                document.querySelector("#previewLabel").innerText = repo.description ? repo.description : "No description available";
             });
 
         } else {
