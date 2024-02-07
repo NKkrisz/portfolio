@@ -33,12 +33,10 @@ async function requestRepos() {
             other_projects[repo.name] = repo;
         }
         
-
-        // console.log(repo);
     };
 };
 
-web_projects = {}
-other_projects = {}
+let web_projects = {}
+let other_projects = {}
 
-requestRepos();
+export {requestRepos};
