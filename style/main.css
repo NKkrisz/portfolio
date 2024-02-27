@@ -15,9 +15,13 @@ body{
     margin: auto;
 }
 
-nav, body, footer{
+body{
     max-width: 1200px;
+}
+
+nav, footer, #container{
     width: 100%;
+    padding: 10px;
 }
 
 a:hover{
@@ -30,6 +34,8 @@ a:hover img{
     filter: invert(0);
 }
 
-.container{
-    padding: 10px;
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
