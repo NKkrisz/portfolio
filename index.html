@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NKkrisz</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/footer.css">
 </head>
 <body>
-    <script type="module" src="components/navbar.js"></script>
+    <nav>
+        <h3>NKkrisz</h3>
+        <ul>
+            <li><a href="#" onclick="changePage('Home')">Home</a></li>
+            <li><a href="#" onclick="changePage('Projects')">Projects</a></li>
+            <li><a href="#" onclick="changePage('Contact')">Contact</a></li>
+        </ul>
+    </nav>    
 
     <div class="container"></div>
     
-    <script src="components/footer.js"></script>
+    <footer>
+        <ul>
+            <li>Socials:</li>
+            <li><a href="https://github.com/NKkrisz"><img src="img/icons/github.svg" alt="Github"></a></li>
+            <li><a href="https://www.reddit.com/user/NKkrisz"><img src="img/icons/reddit.svg" alt="Reddit"></a></li>
+            <li><a href="https://x.com/nkkrisz"><img src="img/icons/x.svg" alt="X"></a></li>
+        </ul>
+        <p>Icons made by: <a href="https://icons8.com/">Icons8</a></p>
+    </footer>
 </body>
 </html>

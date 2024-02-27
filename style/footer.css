@@ -1,0 +1,21 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding: 10px;
+    border-top: 1px solid white;
+}
+
+footer img{
+    filter: invert(1);
+    padding-top: 3px;
+    background-color: #e2e2e2;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+}

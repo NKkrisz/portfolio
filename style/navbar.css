@@ -1,0 +1,16 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: large;
+    border-bottom: 1px solid white;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    text-align: end;
+}
