@@ -6,13 +6,22 @@ async function requestRepos(bestProjects = false) {
         for (let repo of repos) {
             if(bestProjects.includes(repo.name.toLowerCase())){
                 console.log(repo.name);
-                const li = document.createElement('li');
-                const a = document.createElement('a');
-                a.href = repo.html_url;
-                a.innerText = repo.name;
-                a.target = "_blank"
-                li.appendChild(a);
-                document.querySelector("#bestProjects ul").appendChild(li);
+                const figure = document.createElement("figure");
+                const h3 = document.createElement("h3");
+                const image = document.createElement("img");
+                const figcaption = document.createElement("figcaption");
+
+                h3.innerText = repo.name;
+                image.src = `img/projects/${repo.name}.png`;
+                image.alt = repo.name;
+                figcaption.innerText = repo.description ? repo.description : "No description available";
+                
+                figure.appendChild(h3);
+                figure.appendChild(image);
+                figure.appendChild(figcaption);
+                figure.classList.add("project");
+
+                document.querySelector("#bestProjects div").appendChild(figure);
             }
         }
     } else {
