@@ -13,9 +13,6 @@ body{
     flex-direction: column;
     align-items: center;
     margin: auto;
-}
-
-body{
     max-width: 1200px;
 }
 
@@ -32,6 +29,10 @@ a:hover{
 
 a:hover img{
     filter: invert(0);
+}
+
+ul {
+    list-style: none;
 }
 
 #container{

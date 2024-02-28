@@ -32,7 +32,9 @@
         <p>Icons made by: <a href="https://icons8.com/">Icons8</a></p>
     </footer>
 
-    <script src="scripts/navigator.js"></script>
-    <script>changePage("Home");</script>
+    <script type="module">
+        import { changePage } from './scripts/navigator.js';
+        changePage("Home");
+    </script>
 </body>
 </html>
