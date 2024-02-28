@@ -1,0 +1,31 @@
+#introduction p, #introduction i{
+    color: rgba(255, 255, 255, 0.45);
+}
+
+#bestProjects div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+#bestProjects img{
+    width: 100%;
+}
+
+#bestProjects figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    text-wrap: balance;
+    padding: 10px;
+}
+
+@media screen and (max-width: 700px){
+    #bestProjects div{
+        flex-direction: column;
+        align-items: center;
+    }
+}

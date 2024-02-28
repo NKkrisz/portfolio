@@ -1,0 +1,11 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    border-bottom: 1px solid white;
+}
+
+nav li{
+    text-align: end;
+}
